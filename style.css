@@ -1,23 +1,68 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet"><meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meus objetivos do ano</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <section class="conteudo-principal"><h2 class=" titulo principal">Meus Objetivos do ano<span>_</span></h2>
-        <div class="botoes">
-            <button class="botao">Cursos na Alura</button>
-            <button class="botao">Criar projetos em Javascript</button>
-            <button class="botao">Criar Portifolio</button>
-            <button class="botao">Atualizar meu curriculo</button>
-            <buttom class="botao ativo">Cursos na alura</buttom>
-        </div>
-    </section>
-    <script src="main.js"></script>
-</body>
-</html>
+root{
+--cor-de-fundo: #1e1e1e;
+--verde:#6fff57;
+--branco:#ffffff;
+--botao-ativo: rgba(58, 55, 94, 0.3);
+--botao-inativo: rgba(58, 55, 94, 0.3);
+
+}
+
+body{
+background-color: var(--cor-de-fundo);
+color: var(--branco);
+font-family: 'Chakra Petch', sans-serif;
+}
+
+
+.conteudo-pricipal{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+max-width: 1200px;
+width: 100%;
+margin: 0 auto;
+}
+
+.titulo-principal{
+text-align: left;
+width: 100%;
+font-size: 32px;
+
+}
+
+.titulo-principal span{
+color: var(--verde);
+}
+
+.botao{
+font-family: "Chakra Petch", sans-serif;
+background-color: var(--botao-inativo);
+color: var(--branco);
+display: flex;
+justify-content: center;
+padding: 1em;
+font-size: 18px;
+align-items: center;
+width: 100%;
+border-bottom: 4px solid var(--botao-ativo);
+border-left: 2px solid var(--botao-ativo);
+border-right: 2px solid var(--botao-ativo);
+border-top: none;
+
+
+}
+
+.botao:first-child {
+border-radius: 40px 40px 0 0;
+}
+
+.botoes {
+display: block;
+}
+
+.ativo{
+
+background-color: var(--botao-ativo);
+border-bottom: 4px solid var(--verde);
+}
